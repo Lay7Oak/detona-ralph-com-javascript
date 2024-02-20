@@ -29,7 +29,7 @@ function countDown(){
     if(state.values.curretTime <= 0){
         clearInterval(state.actions.countDownTimeId);
         clearInterval(state.actions.timeId);
-        alert("Game Over! O seu resultado foi: " + state.values.result);
+        alert("Tempo Esgotado! O seu resultado foi: " + state.values.result);
     }
 }
 
