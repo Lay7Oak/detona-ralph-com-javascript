@@ -22,26 +22,44 @@
     <div class="container">
 
         <div class="menu">
-            <div class="menu-time">
-                <h2 style="color: red;">Time Left</h2>
+            <div class="menu-time" title="Tempo Restante">
+                <h2 style="color: red;" >Time Left</h2>
                 <h2 id="time-left">0</h2>
 
             </div>
-            <div class="menu-score">
+            <div class="menu-score" title="Sua Pontuação">
 
-                <h2 style="color: red;">Your Score</h2>
+                <h2 style="color: red;" >Your Score</h2>
                 <h2 id="score">0</h2>
 
             </div>
-            <div class="menu-lives">
+            <div class="menu-lives" title="Vidas">
              <img src="./src/images/player.png" alt="foto do jogador" height="60px";>
-             <h2>x3</h2>
+             <h2 id="lives">x3</h2>
 
+
+            </div><button id="instrucao" aria-label="Abrir Instruções" title="Instruções e Som">📒</button>
+            
             </div>
-
-        </div>
-
+              
         <div class="panel">
+
+            <div id="regras" class="instruct">
+                <button id="on-sound-off">Desativar Som</button>
+                <h2>✨ Instruções ✨</h2>
+<ul>
+    <li>👉 Você tem 60 segundos para acertar o Ralph o máximo que puder.</li>
+    <li>👉 Regras:</li>
+            <li>1. Se não acertar Ralph 30 vezes nos primeiros 50 segundos: perde uma vida.</li>
+            <li>2. Se clicar em janela vazia (sem Ralph) 3 vezes: perde uma vida.</li>
+            <li>3. Se perder as 3 vidas: perde o jogo.</li>
+    <li>👉 Venceu os 50 segundos?</li>
+            <li>Não se distraia!  Nos 10 segundos finais, 
+                você pode fazer mais pontos,  porém,  se clicar em janela vazia 
+                (sem Ralph) 3 vezes: perde a vida.</li>
+    <li>👉 Aperte Start para começar e Restart para reiniciar.</li>
+                </ul>
+            </div>
 
          <div class="panel-row">
 
@@ -67,16 +85,36 @@
 
          </div>
 
+        </div>
 
+        <div id="botoes">
+            <button id="start-button">Start</button>
+            <button id="restart-button">Restart</button>
+    
         </div>
 
     </div>
     
+        <div vw class="enabled" id="vw-position">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
 
-   
-
-
-
+    <script defer src="./src/scripts/regras-do-jogo.js"></script>
     <script defer src="./src/scripts/engine.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
