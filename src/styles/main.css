@@ -106,6 +106,10 @@ li{
     margin-top: 2rem;
 }
 
+.li-sem-marg{
+    margin-top: 0;
+}
+
 .instruct {
     display: none;
 }

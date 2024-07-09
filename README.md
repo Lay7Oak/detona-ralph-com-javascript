@@ -30,8 +30,11 @@ ao longo de 60 segundos (emite alerta com a pontuação).
     2. Se clicar em janela vazia (sem Ralph) 3 vezes: perde uma vida.
     3. Perde o jogo ao perder todas as 3 vidas.
 
+    ⚠️ Após perder uma vida o jogo continua automaticamente, parando apenas em 2 casos: Vitória ou Game Over
+
     👉 Venceu os 50 segundos?
-    Não se distraia! Nos 10 segundos finais, você pode fazer mais pontos, porém, se clicar em janela vazia (sem Ralph) 3 vezes: perde a vida.
+    ⚠️ Não se distraia! Nos 10 segundos finais, você pode fazer mais pontos, porém, 
+    se clicar em janela vazia (sem Ralph) 3 vezes: perde a vida.
 
     👉 Aperte Start para começar e Restart para reiniciar."
 ````
@@ -44,9 +47,11 @@ ao longo de 60 segundos (emite alerta com a pontuação).
   ````
     - "Você é Master! Parabéns, ultrapassou a meta com x pontos!" ( jogador faz mais de 30 pontos)
     - "Parabéns! Você completou o jogo com sucesso" (jogador faz os  30 pontos da regra 1)
-    - "Meta não atingida! Perdeu uma vida! Você fez x pontos" (quando o jogador não atinge 30 pontos em 50 segundos; neste contexto, o contador para faltando 10 segundos, o alerta é emitido, encerra a jogada e decrementa uma vida)
+    - "Meta não atingida! Perdeu uma vida! Você fez x pontos" (quando o jogador não atinge 30 pontos
+       em 50 segundos; neste contexto, o contador para faltando 10 segundos, o alerta é emitido, 
+       encerra a jogada e decrementa uma vida)
     - "3 Cliques em Janela Vazia! Perdeu uma vida! Você fez x pontos" (conforme regra)
     - "Game Over! Você perdeu todas as vidas." (conforme regra)
 ````
-  - Implementação do V-Libras e atributo "title" (texto informativo ao passar o mouse), para acessibilidade
+  - Implementação do V-Libras e atributo "title" (texto informativo ao passar o mouse), para acessibilidade.
 
